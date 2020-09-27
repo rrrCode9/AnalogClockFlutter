@@ -146,8 +146,7 @@ class Circle {
   Color color;
 
   Circle({this.canvas, this.radius, this.center, this.strokeWidth, this.fill, this.color}) {
-    final radius = this.radius;
-    final paint = Paint()
+       final paint = Paint()
       ..color = this.color
       ..style = fill ? PaintingStyle.fill : PaintingStyle.stroke
       ..strokeWidth = this.strokeWidth;
@@ -159,7 +158,7 @@ class Line {
   Canvas canvas;
   Offset point1, point2;
   Color color;
-  double strokeWidth = 4;
+  double strokeWidth;
 
   Line({this.canvas, this.point1, this.point2, this.color, this.strokeWidth}) {
     final paint = Paint()
